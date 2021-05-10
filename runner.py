@@ -1,9 +1,18 @@
 from classes.school import School 
 from classes.student import Student
 from classes.staff import Staff
+import csv
 
-school = School('Ridgemont High') 
-test_student = Student('Jim', 22, 'password', 'student', 789)
+school = School('Ridgemont High')
+print(' ', school.name)
 
-print(school.name)
-print(test_student.name)
+print("\nStudents:")
+for ppl in school.students:
+    print(' ', ppl)
+
+print('\nStaff:')
+for ppl in school.staff:
+    print(' ', ppl)
+
+
+
